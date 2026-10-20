@@ -1,24 +1,39 @@
+/* Mengatur tampilan dasar untuk seluruh halaman web */
 body {
-      backgroud-color: #FFFFE0; /* Warna Kuning Cerah */
-      font-family: Arial, sans-serif ; /* Jenis huruf yang bersih dan mudah dibaca */
-      color: #191970; /* Warna teks utama (Biru Gelap) */
+    background-color: #FFFFE0; /* Warna latar belakang (Kuning Cerah) */
+    font-family: Arial, sans-serif; /* Jenis huruf yang bersih dan mudah dibaca */
+    color: #191970; /* Warna teks utama (Biru Gelap) */
 }
 
+/* Mengatur tampilan kotak kartu profil */
 .kartu-profil {
-    width: 300px;
-    margin: 50px auto; /*50px  jarak atas/bawah, auto menengahkan kiri/kanan */
-    padding: 20px;
-    backgroud-color: white;
-    border-radius: 15px; /* Membuat sudut menjadi melengkung */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Efek bayangan */
+    width: 300px; /* Lebar kartu */
+    margin: 50px auto; /* 50px jarak atas/bawah, auto untuk menengahkan posisi kiri/kanan */
+    padding: 20px; /* Jarak antara isi kartu dengan pinggirannya */
+    background-color: white; /* Warna latar kartu */
+    border-radius: 15px; /* Membuat sudut kartu menjadi melengkung */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Efek bayangan lembut di belakang kartu */
+    text-align: center; /* Menengahkan semua teks dan elemen di dalam kartu */
 }
-|
 
+/* Mengatur tampilan gambar foto profil */
 .kartu-profil img {
-    width: 150px;
-    border-radius: 50%; /* Trik untuk membuat gambar persegi panjang menjadi lingkaran sempurna */
+    width: 150px; /* Lebar gambar */
+    height: 150px; /* Tinggi gambar dibuat sama agar proporsional */
+    object-fit: cover; /* Mencegah gambar terlihat terdistorsi/gepeng */
+    border-radius: 50%; /* Membuat gambar persegi menjadi lingkaran sempurna */
 }
-.kartu-profil {
-  /* ... (kode dari slide sebelumnya) ... */
-text-align: center; /* Menengahkan semua teks di dalam kartu */
+
+/* Mengatur tampilan tombol sapa */
+.kartu-profil button {
+    padding: 10px 20px;
+    background-color: #191970;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.kartu-profil button:hover {
+    background-color: #2b2b80; /* Efek perubahan warna saat kursor menempel di tombol */
 }
